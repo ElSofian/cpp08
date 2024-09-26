@@ -13,12 +13,12 @@ class NotFoundException : public std::exception {
         }
 };
 
-template <typename T>
-void easyfind(T &container, int value)
+template<typename T>
+void    easyfind(T &container, int n)
 {
-	typename T::iterator res;
+    typename T::iterator res;
 
-    res = find(container.begin(), container.end(), value);
+    res = find(container.begin(), container.end(), n);
     try
     {
         if (res == container.end())
@@ -32,5 +32,5 @@ void easyfind(T &container, int value)
     catch (const std::exception &e)
     {
         std::cerr << e.what() << std::endl;
-    };
+    }
 }

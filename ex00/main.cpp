@@ -1,6 +1,6 @@
 #include "easyfind.hpp"
 
-int main(void)
+int main()
 {
     std::vector<int> test;
     test.push_back(1);
@@ -9,7 +9,7 @@ int main(void)
 
     easyfind(test, 22);
 
-    std::stack<char> test2;
+    std::list<char> test2;
     test2.push_back('A');
     test2.push_back('B');
     test2.push_back('C');
